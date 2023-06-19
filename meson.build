@@ -1,5 +1,5 @@
 project (
-    'enstl',
+    'com.github.ensemblesaw.enstl',
     'c', 'vala',
     version: '0.1.0',
 )
@@ -18,7 +18,7 @@ dependencies = [
 
 # Define library
 libenstl = static_library (
-    meson.project_name () + '-' + meson.project_version().split('.')[0],
+    'enstl-' + meson.project_version().split('.')[0],
     sources,
     config_header,
     dependencies: dependencies,
