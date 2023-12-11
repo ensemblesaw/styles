@@ -4,6 +4,9 @@ project (
     version: '0.1.0',
 )
 
+# Package Config
+pkg = import('pkgconfig')
+
 # Install accompaniment styles
 install_subdir (
     'StyleFiles',
@@ -31,3 +34,5 @@ enstl_dep = declare_dependency (
     include_directories: include_directories('.'),
     link_with: libenstl
 )
+
+libenstl_pc = pkg.generate(libenstl)
