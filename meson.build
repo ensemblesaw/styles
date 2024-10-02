@@ -25,7 +25,8 @@ libenstl = static_library (
     sources,
     config_header,
     dependencies: dependencies,
-    install: true
+    install: true,
+    install_dir: [true, true, true]
 )
 
 enstl_dep = declare_dependency (
