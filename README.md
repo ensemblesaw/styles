@@ -1,21 +1,24 @@
 ## Ensembles Styles Specification
 
 ### Layout
-- Configuration
-- Intro 1
-- Intro 2
-- Variation A
-- Fill-In A
-- Variation B
-- Fill-In B
-- Variation C
-- Fill-In C
-- Variation D
-- Fill-In D
-- Ending 1
-- End of Style 1 (EOS1)
-- Ending 2
-- End of Style 2 (EOS2)
+- Configuration  `CONFIG`
+- Intro 1  `INT_1`
+- Intro 2  `INT_2`
+- Intro 3  `INT_3`
+- Variation A  `VAR_A`
+- Fill-In A  `FILL_A`
+- Variation B  `VAR_B`
+- Fill-In B  `FILL_B`
+- Variation C  `VAR_C`
+- Fill-In C  `FILL_A`
+- Variation D  `VAR_D`
+- Fill-In D  `FILL_D`
+- Ending 1  `END_1`
+- End of Style 1  `EOS`
+- Ending 2  `END_2`
+- End of Style 2  `EOS`
+- Ending 3  `END_3`
+- End of Style 3  `EOS`
 
 All Styles are required to have resolution (ticks per quarter note) in the *MThd* header and time signature embeded in the file.
 
@@ -26,10 +29,9 @@ With the exception of the configuration marker, all markers use the same syntax 
 
 The Configuration marker is as follows:
 
-```Config:<Measure Number (usually 1)>;<Tempo>,<Chord Type>```
+```CONFIG:<Measure Number (usually 1)>;<Chord Type>```
 
 * Measure number is number of measures upto the occurance of that marker. So _Config_ has measure 1, _Intro A_ has 2 and so on.
-* Tempo is in BPM (Beats per Minute) [Note: Don't use fractional tempo. It needs to be whole number!]
 * Chord Type is 0 is original scale of style is in major and 1 if it's minor
 
 ### Modulators
@@ -37,7 +39,7 @@ The Configuration marker is as follows:
 - 10 - Pan [-100, 100]
 - 64 - Sustain [0, 127]
 - 71 - Resonance [0, 127]
-- 74 - Cut-Off Filter [0, 127]
+- 74 - Brightness [0, 127]
 - 82 - Play Alt Channels [0 - 64] (Check Note)
 - 85 - Explicit Bank Select (in case standard bank select doesn't work, required for accessing XG sounds)
 - 91 - Reverb [0, 127]

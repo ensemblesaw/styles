@@ -1,5 +1,5 @@
 {
     "mesonbuild.configureOnOpen": true,
-    "C_Cpp.default.compileCommands": "/home/subhadeep/Projects/Ensembles AW/styles/builddir/compile_commands.json",
+    "C_Cpp.default.compileCommands": "/home/subhadeep/Projects/Ensembles/styles/builddir/compile_commands.json",
     "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild"
 }
